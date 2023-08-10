@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'howlimit';
+  src: url('/assets/fonts/Howlimit.woff2') format('woff2'),
+    url('/assets/fonts/Howlimit.woff') format('woff');
+  font-display: swap;
+}
+
+* {
+  font-family: 'howlimit';
+}
+
+.background {
+  background-color: #202329;
+}
+
+.details-container {
+  color: aliceblue;
+}
+
+.navbar {
+  text-align: center;
+  background-image: url(assets/img/bg-img.jpg);
+}
+
+.logo {
+  width: 25rem;
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.04);
+}
+
+.card-body {
+  font-size: 0.8rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+}
+
+.card-text {
+  margin-bottom: 8px;
+}
+
+.episode-list-element {
+  font-size: 0.9rem
+}
+
+.list-group-item {
+  transition: transform 0.3s ease;
+}
+
+.list-group-item:hover {
+  transform: scale(0.98);
+}
+
+.btn-img {
+  transition: transform 0.2s ease;
+}
+
+.btn-img:hover {
+  transform: scale(1.1);
+}
+
+.episode-link {
+  color:#212529
+}
+
+.episode-link:hover {
+  color: #00b6ce;
+}
+
+.origin-link {
+  color:#212529
+}
+
+.origin-link:hover {
+  color: #00b6ce;
+}

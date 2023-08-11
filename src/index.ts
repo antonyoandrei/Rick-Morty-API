@@ -1,42 +1,7 @@
-enum Status {
-  Alive = "Alive",
-  Dead = "Dead",
-  Unknown = "unknown",
-}
-
-enum Gender {
-  Male = "Male",
-  Female = "Female",
-  Unknown = "unknown",
-  Genderless = "Genderless"
-}
-
-interface Episode {
-  name: string;
-  air_date: string;
-  episode: string;
-  characters: string[];
-}
-
-interface Character {
-  name: string;
-  status: Status;
-  species: string;
-  gender: Gender;
-  image: string;
-  origin: {
-    name: string;
-    url: string;
-  };
-  episode: string[];
-}
-
-interface Location {
-  name: string;
-  type: string;
-  dimension: string;
-  residents: string[];
-}
+import { Episode } from "./types/episode";
+import { Character, Status, Gender } from "./types/character";
+import { Location } from "./types/location";
+import bootstrap from "bootstrap";
 
 const API_URL = 'https://rickandmortyapi.com/api';
 let page = 1;

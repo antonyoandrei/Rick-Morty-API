@@ -31,7 +31,7 @@ function fetchLocation(locationUrl) {
             const location = yield response.json();
             const episodeDetailsContainer = document.getElementById('episodeDetailsContainer');
             if (episodeDetailsContainer) {
-                episodeDetailsContainer.innerHTML = '';
+                episodeDetailsContainer.replaceChildren();
                 const locationDetails = document.createElement('div');
                 locationDetails.classList.add('mb-3', 'mt-3');
                 const locationName = document.createElement('h2');
@@ -240,7 +240,7 @@ function openCharacterModal(character) {
                 const selectedEpisode = yield selectedEpisodeResponse.json();
                 const episodeDetailsContainer = document.getElementById('episodeDetailsContainer');
                 if (episodeDetailsContainer) {
-                    episodeDetailsContainer.innerHTML = '';
+                    episodeDetailsContainer.replaceChildren();
                     const episodeDetails = document.createElement('div');
                     episodeDetails.classList.add('mb-3', 'mt-3');
                     const episodeName = document.createElement('h2');

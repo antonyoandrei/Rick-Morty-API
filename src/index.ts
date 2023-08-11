@@ -48,7 +48,7 @@ async function fetchLocation(locationUrl: string): Promise<void> {
 
     const episodeDetailsContainer = document.getElementById('episodeDetailsContainer');
     if (episodeDetailsContainer) {
-      episodeDetailsContainer.innerHTML = '';
+      episodeDetailsContainer.replaceChildren();
 
       const locationDetails = document.createElement('div');
       locationDetails.classList.add('mb-3', 'mt-3');
@@ -301,7 +301,7 @@ async function openCharacterModal(character: Character): Promise<void> {
 
       const episodeDetailsContainer = document.getElementById('episodeDetailsContainer');
       if (episodeDetailsContainer) {
-        episodeDetailsContainer.innerHTML = ''; 
+        episodeDetailsContainer.replaceChildren(); 
 
         const episodeDetails = document.createElement('div');
         episodeDetails.classList.add('mb-3', 'mt-3');

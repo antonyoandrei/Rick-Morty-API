@@ -5,6 +5,18 @@
   font-display: swap;
 }
 
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  border-radius: 3.125rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #009b1a;
+  border-radius: 3.125rem;
+}
+
 * {
   font-family: 'howlimit';
 }
